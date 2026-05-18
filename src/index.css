@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-roman: "Times New Roman", Times, serif;
+
+
+  --color-primary: #800000;
+  --color-secondary: #FFDF20;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
