@@ -1,4 +1,4 @@
-import { FaUser, FaHeart, FaLightbulb, FaGraduationCap, FaUsers, FaBook, FaTrophy, FaChartLine, FaStar, FaCheckCircle } from "react-icons/fa";
+import { FaUser, FaHeart, FaLightbulb, FaGraduationCap, FaUsers, FaBook, FaTrophy, FaChartLine, FaCheckCircle } from "react-icons/fa";
 import { useState } from "react";
 
 const PrincipalMessage = () => {
@@ -35,10 +35,10 @@ const PrincipalMessage = () => {
   ];
 
   const achievements = [
-    { stat: "2,500+", label: "Happy Students" },
-    { stat: "200+", label: "Dedicated Staff" },
-    { stat: "50+", label: "Years of Excellence" },
-    { stat: "95%+", label: "Pass Rate" },
+    { stat: "500+", label: "Happy Students" },
+    { stat: "25+", label: "Dedicated Staff" },
+    { stat: "5+", label: "Years of Excellence" },
+    { stat: "80%+", label: "Pass Rate" },
   ];
 
   const visionPoints = [
@@ -64,31 +64,14 @@ const PrincipalMessage = () => {
     },
   ];
 
-  const testimonialsData = [
-    {
-      name: "Parents",
-      quote: "The Principal's leadership has transformed the school into a beacon of excellence. We see the personal growth in our children every day.",
-      role: "School Community",
-    },
-    {
-      name: "Teachers",
-      quote: "Working under such visionary leadership is truly inspiring. We are empowered to innovate and give our best to our students.",
-      role: "Faculty Members",
-    },
-    {
-      name: "Students",
-      quote: "Our Principal believes in us and pushes us to achieve our dreams. She is not just an administrator but a mentor.",
-      role: "Student Leaders",
-    },
-  ];
 
   const principalProfile = {
-    name: "Dr. Vikram Patel",
+    name: "Shelesh Kumar",
     designation: "Principal",
-    qualification: "Ph.D in Education, M.A",
+    qualification: "MCs, B.Ed, M.Ed",
     experience: "18+ years in School Management",
-    email: "principal@dpsdungarpur.edu.in",
-    phone: "+91-2964-XXXXXX",
+    email: "principal@mydps.in",
+    phone: "+91 87399 25438",
   };
 
   return (
@@ -106,7 +89,7 @@ const PrincipalMessage = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             {/* Profile Card */}
-            <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg text-center border-t-4 border-secondary">
+            <div className="bg-linear-to-br from-gray-50 to-white p-8 rounded-lg shadow-lg text-center border-t-4 border-secondary">
               <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-primary p-1">
                 <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
                   <FaUser className="text-6xl text-gray-400" />
@@ -142,7 +125,7 @@ const PrincipalMessage = () => {
                 </p>
                 <p className="font-roman font-semibold text-primary">
                   Warm regards,<br />
-                  Dr. Vikram Patel<br />
+                  Shelesh Kumar<br />
                   Principal
                 </p>
               </div>
@@ -282,28 +265,6 @@ const PrincipalMessage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="w-full py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">What People Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonialsData.map((testimonial, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-secondary">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} className="text-secondary" />
-                  ))}
-                </div>
-                <p className="text-gray-700 italic mb-4">"{testimonial.quote}"</p>
-                <div className="border-t pt-4">
-                  <p className="font-roman font-bold text-primary">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Message from Team */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -316,24 +277,6 @@ const PrincipalMessage = () => {
             <p className="text-gray-700 leading-relaxed">
               Together, let's build a community where every child discovers their potential, develops strong values, and becomes a force for positive change in the world.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Connect with Principal */}
-      <section className="w-full py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-roman font-bold text-primary mb-8">Connect with the Principal</h2>
-          <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-            I believe in maintaining an open dialogue with our school community. Feel free to reach out with suggestions, concerns, or just to share your thoughts.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <button className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300">
-              Schedule Meeting
-            </button>
-            <button className="px-8 py-3 bg-secondary text-primary rounded-lg font-semibold hover:opacity-90 transition-all duration-300">
-              Send Message
-            </button>
           </div>
         </div>
       </section>

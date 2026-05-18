@@ -8,19 +8,19 @@ const StaffMembers = () => {
   const staffCategories = [
     { id: "all", name: "All Staff", count: 200 },
     { id: "administration", name: "Administration", count: 6 },
-    { id: "teaching", name: "Teaching Staff", count: 120 },
+    { id: "teaching", name: "Teaching Staff", count: 25 },
     { id: "support", name: "Support Staff", count: 40 },
     { id: "specialized", name: "Specialized Services", count: 34 },
   ];
 
   const administrativeStaff = [
     {
-      name: "Dr. Vikram Patel",
+      name: "Shelesh Kumar",
       role: "Principal",
-      qualification: "Ph.D in Education, M.A",
+      qualification: "MSC, B.Ed, M.Ed",
       experience: "18+ years",
-      email: "principal@dpsdungarpur.edu.in",
-      phone: "+91-2964-XXXXXX",
+      email: "principal@mydps.in",
+      phone: "+91 87399 25438",
       specialization: "School Management & Leadership",
       about: "Visionary leader with extensive experience in school administration and curriculum development",
     },
