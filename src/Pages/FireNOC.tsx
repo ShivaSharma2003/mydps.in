@@ -366,26 +366,15 @@ const FireNOC = () => {
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Download Documents</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
             {[
               {
                 title: "Fire NOC Certificate",
                 description: "Official Fire No Objection Certificate from Fire Department",
                 fileType: "PDF",
                 size: "2.5 MB",
-              },
-              {
-                title: "Fire Safety Manual",
-                description: "Comprehensive guide on fire safety procedures and protocols",
-                fileType: "PDF",
-                size: "3.2 MB",
-              },
-              {
-                title: "Emergency Procedures",
-                description: "Step-by-step emergency evacuation and response procedures",
-                fileType: "PDF",
-                size: "1.8 MB",
-              },
+                href: "/files/FIRE NOC DPS 2026.pdf",
+              }
             ].map((doc, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-secondary">
                 <div className="flex items-center gap-3 mb-4">
@@ -396,55 +385,13 @@ const FireNOC = () => {
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm mb-4">{doc.description}</p>
-                <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300">
+                <a href={doc.href} download className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300">
                   <FaDownload className="text-sm" />
                   Download PDF
-                </button>
+                </a>
               </div>
             ))}
           </div>
-
-          {/* Additional Download Options */}
-          <div className="mt-12 max-w-3xl mx-auto">
-            <h3 className="text-2xl font-roman font-bold text-primary text-center mb-8">Other Resources</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                {
-                  title: "Fire Equipment Checklist",
-                  description: "Monthly maintenance checklist for all fire safety equipment",
-                },
-                {
-                  title: "Staff Safety Training Guide",
-                  description: "Guidelines for staff fire safety training and certification",
-                },
-                {
-                  title: "Inspection Report 2024",
-                  description: "Latest inspection report from Fire Department",
-                },
-                {
-                  title: "Safety Compliance Record",
-                  description: "Annual fire safety compliance and audit records",
-                },
-              ].map((resource, index) => (
-                <div key={index} className="bg-white p-4 rounded-lg shadow-md border-l-4 border-secondary hover:shadow-lg transition-all duration-300">
-                  <h4 className="font-roman font-bold text-primary mb-2">{resource.title}</h4>
-                  <p className="text-sm text-gray-700 mb-3">{resource.description}</p>
-                  <button className="flex items-center gap-2 px-4 py-2 text-primary hover:text-secondary font-semibold transition-colors duration-300">
-                    <FaDownload className="text-sm" />
-                    Download
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#800000" }}>
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-roman font-bold text-white mb-4">Safety is Our Priority</h2>
-          <p className="text-lg text-gray-200">We are committed to maintaining the highest fire safety standards to protect our students and staff</p>
         </div>
       </section>
     </div>
