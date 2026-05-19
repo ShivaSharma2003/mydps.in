@@ -26,19 +26,19 @@ const ContactUs = () => {
     {
       icon: FaPhone,
       title: "Phone",
-      details: ["+91-2964-224567", "+91-9876-543210"],
+      details: ["+91-95210-19058"],
       label: "Call us for immediate assistance",
     },
     {
       icon: FaEnvelope,
       title: "Email",
-      details: ["info@dpsdungarpur.edu.in", "admissions@dpsdungarpur.edu.in"],
+      details: ["principal@srsl.in"],
       label: "Send us your queries anytime",
     },
     {
       icon: FaMapMarkerAlt,
       title: "Location",
-      details: ["Dungarpur", "Rajasthan 314001, India"],
+      details: ["Bichhiwara Road, Dungarpur", "Rajasthan 314001, India"],
       label: "Visit our campus",
     },
     {
@@ -53,37 +53,37 @@ const ContactUs = () => {
     {
       dept: "Principal's Office",
       phone: "+91-2964-224567",
-      email: "principal@dpsdungarpur.edu.in",
+      email: "principal@srsl.in",
       timings: "8:00 AM - 3:30 PM",
     },
     {
       dept: "Admissions",
       phone: "+91-2964-224568",
-      email: "admissions@dpsdungarpur.edu.in",
+      email: "admissions@srsl.in",
       timings: "8:00 AM - 4:00 PM",
     },
     {
       dept: "Academic Department",
       phone: "+91-2964-224569",
-      email: "academics@dpsdungarpur.edu.in",
+      email: "academics@srsl.in",
       timings: "8:00 AM - 3:30 PM",
     },
     {
       dept: "Finance & Fee",
       phone: "+91-2964-224570",
-      email: "finance@dpsdungarpur.edu.in",
+      email: "finance@srsl.in",
       timings: "9:00 AM - 2:00 PM",
     },
     {
       dept: "Sports Department",
       phone: "+91-2964-224571",
-      email: "sports@dpsdungarpur.edu.in",
+      email: "sports@srsl.in",
       timings: "3:30 PM - 6:00 PM",
     },
     {
       dept: "Counseling Services",
       phone: "+91-2964-224572",
-      email: "counseling@dpsdungarpur.edu.in",
+      email: "counseling@srsl.in",
       timings: "8:00 AM - 4:00 PM",
     },
   ];
@@ -248,16 +248,16 @@ const ContactUs = () => {
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <p>
-                    <span className="font-bold">School Code:</span> 1001234
+                    <span className="font-bold">DISC Code:</span> 08270218402
                   </p>
                   <p>
-                    <span className="font-bold">UDISE Code:</span> 08050100103
+                    <span className="font-bold">Affiliation. No.:</span> 1730171
                   </p>
                   <p>
                     <span className="font-bold">Affiliation:</span> CBSE (Central Board of Secondary Education)
                   </p>
                   <p>
-                    <span className="font-bold">Website:</span> www.dpsdungarpur.edu.in
+                    <span className="font-bold">Website:</span> www.mydps.in
                   </p>
                 </div>
               </div>

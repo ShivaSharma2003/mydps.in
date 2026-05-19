@@ -164,7 +164,7 @@ const Footer = () => {
             </h1>
           </div>
           <div className="text-sm">
-            <span className="font-semibold font-roman">School Code: </span>
+            <span className="font-semibold font-roman">Affiliation No.: </span>
             <span className="font-bold text-secondary font-roman tracking-wider">
               1730171
             </span>
@@ -173,7 +173,9 @@ const Footer = () => {
             © Copyright {new Date().getFullYear()} All rights reserved by
             Dungarpur Public School, Dungarpur, Rajasthan. Powered by{" "}
             <span className="font-medium font-roman text-secondary">
-              Nebula Technologies Labs Pvt. Ltd.
+              <a href="https://www.nebulatechnologieslabs.com" target="_blank" rel="noopener noreferrer">
+                Nebula Technologies Labs Pvt. Ltd.
+              </a>
             </span>
           </p>
         </div>

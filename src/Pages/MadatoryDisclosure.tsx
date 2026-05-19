@@ -6,11 +6,11 @@ const MandatoryDisclosure = () => {
 
   const institutionalInfo = [
     { label: "School Name", value: "Dungarpur Public School, Dungarpur" },
-    { label: "Affiliation Number", value: "1030532" },
+    { label: "Affiliation Number", value: "1730171" },
     { label: "Board", value: "Central Board of Secondary Education (CBSE)" },
     { label: "School Category", value: "Co-educational" },
-    { label: "Principal's Name", value: "Dr. Vikram Patel" },
-    { label: "Address", value: "Dungarpur, Rajasthan" },
+    { label: "Principal's Name", value: "Mr. Shelesh Kumar" },
+    { label: "Address", value: "Bicchiwara Road, Dungarpur, Rajasthan, 314001" },
   ];
 
   const staffInfo = [
@@ -379,17 +379,17 @@ const MandatoryDisclosure = () => {
             <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md">
               <FaPhone className="text-3xl text-secondary mx-auto mb-3" />
               <h3 className="font-roman font-bold text-primary mb-2">Phone</h3>
-              <p className="text-gray-700">+91-2964-XXXXXX</p>
+              <p className="text-gray-700">+91-95210-19058</p>
             </div>
             <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md">
               <FaEnvelope className="text-3xl text-secondary mx-auto mb-3" />
               <h3 className="font-roman font-bold text-primary mb-2">Email</h3>
-              <p className="text-gray-700">info@dpsdungarpur.edu.in</p>
+              <p className="text-gray-700">principal@srsl.in</p>
             </div>
             <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md">
               <FaMapMarkerAlt className="text-3xl text-secondary mx-auto mb-3" />
               <h3 className="font-roman font-bold text-primary mb-2">Visit Us</h3>
-              <p className="text-gray-700">Dungarpur, Rajasthan</p>
+              <p className="text-gray-700">Bichhiwara Road, Dungarpur, Rajasthan, 314001</p>
             </div>
           </div>
         </div>
