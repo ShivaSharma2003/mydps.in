@@ -1,4 +1,4 @@
-import {FaFileAlt, FaCalendar, FaDollarSign, FaCheckCircle, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {FaFileAlt, FaCalendar, FaCheckCircle, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ const Admissions = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
   const admissionClasses = [
-    { class: "Nursery", age: "2.5 - 3.5 years", batch: "July 2024" },
+    { class: "Nursery", age: "3+ years", batch: "July 2024" },
     { class: "KG", age: "3.5 - 4.5 years", batch: "July 2024" },
     { class: "Class I", age: "4.5 - 5.5 years", batch: "July 2024" },
     { class: "Class II - V", age: "As per DOB", batch: "July 2024" },
@@ -233,7 +233,6 @@ const Admissions = () => {
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Fee Structure</h2>
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-gray-50 to-white p-8 rounded-lg shadow-md border-l-4 border-secondary">
             <div className="flex items-center gap-4 mb-6">
-              <DollarSign className="text-4xl text-primary" />
               <div>
                 <h3 className="text-2xl font-roman font-bold text-primary">Detailed Fee Information</h3>
                 <p className="text-gray-600">View complete fee structure for all classes</p>
@@ -314,8 +313,5 @@ const Admissions = () => {
     </div>
   );
 };
-
-// Fix for FaDollarSign import alias issue
-const DollarSign = FaDollarSign;
 
 export default Admissions;

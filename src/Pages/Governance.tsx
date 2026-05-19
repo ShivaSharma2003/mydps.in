@@ -7,31 +7,16 @@ const Governance = () => {
   const governingBody = [
     {
       role: "Chairman",
-      name: "Mr. Rajesh Kumar Singh",
-      qualification: "B.Tech, MBA",
+      name: "Mr. Vikas Ladia",
       experience: "25+ years in Education & Business",
       contact: "chairman@dpsdungarpur.edu.in",
     },
     {
-      role: "Vice-Chairman",
-      name: "Mrs. Priya Sharma",
-      qualification: "B.A., LL.B",
-      experience: "20+ years in Educational Administration",
-      contact: "vicechairman@dpsdungarpur.edu.in",
-    },
-    {
       role: "Principal",
-      name: "Dr. Vikram Patel",
-      qualification: "Ph.D in Education, M.A",
+      name: "Mr. Shelesh Kumar",
+      qualification: "MSC.",
       experience: "18+ years in School Management",
       contact: "principal@dpsdungarpur.edu.in",
-    },
-    {
-      role: "Secretary",
-      name: "Mr. Ashok Mehta",
-      qualification: "B.Com, CA",
-      experience: "15+ years in Finance & Governance",
-      contact: "secretary@dpsdungarpur.edu.in",
     },
   ];
 
@@ -366,7 +351,7 @@ const Governance = () => {
       </section>
 
       {/* Contact for Governance Queries */}
-      <section className="w-full py-16 px-4 bg-gray-50">
+      {/* <section className="w-full py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-roman font-bold text-primary mb-8">Governance Inquiries</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
@@ -384,15 +369,7 @@ const Governance = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#800000" }}>
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-roman font-bold text-white mb-4">Committed to Excellence & Accountability</h2>
-          <p className="text-lg text-gray-200">Our governance framework ensures transparency, quality education, and stakeholder trust</p>
-        </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { FaTrophy, FaUsers, FaBuilding, FaBook, FaHeart, FaStar, FaCheckCircle, FaAward, FaMedal, FaHistory, FaGraduationCap } from "react-icons/fa";
+import { FaTrophy, FaUsers, FaBuilding, FaBook, FaStar, FaCheckCircle, FaAward, FaMedal, FaGraduationCap } from "react-icons/fa";
 import { useState } from "react";
 
 const SchoolHistory = () => {
@@ -69,29 +69,23 @@ const SchoolHistory = () => {
 
   const founders = [
     {
-      name: "Mr. Rajesh Kumar Singh",
+      name: "Mr. Vikas Ladia",
       role: "Founder & Chairman",
       contribution: "Visionary who established the school with a mission to provide quality education",
-      year: "1975",
-    },
-    {
-      name: "Mrs. Priya Sharma",
-      role: "Co-Founder & Trustee",
-      contribution: "Pioneered holistic education approach focusing on character development",
-      year: "1975",
+      year: "1995",
     },
   ];
 
-  const keyMilestones = [
-    { year: 1975, event: "School Founded", icon: FaHistory },
-    { year: 1980, event: "Secondary Section Opened", icon: FaBuilding },
-    { year: 1988, event: "Senior Secondary Wing Launched", icon: FaGraduationCap },
-    { year: 1998, event: "CBSE Affiliation Granted", icon: FaCheckCircle },
-    { year: 2005, event: "Campus Modernization Completed", icon: FaTrophy },
-    { year: 2015, event: "ISO Certification Achieved", icon: FaAward },
-    { year: 2020, event: "Green School Certified", icon: FaHeart },
-    { year: 2024, event: "Golden Jubilee Celebrations", icon: FaStar },
-  ];
+  // const keyMilestones = [
+  //   { year: 1975, event: "School Founded", icon: FaHistory },
+  //   { year: 1980, event: "Secondary Section Opened", icon: FaBuilding },
+  //   { year: 1988, event: "Senior Secondary Wing Launched", icon: FaGraduationCap },
+  //   { year: 1998, event: "CBSE Affiliation Granted", icon: FaCheckCircle },
+  //   { year: 2005, event: "Campus Modernization Completed", icon: FaTrophy },
+  //   { year: 2015, event: "ISO Certification Achieved", icon: FaAward },
+  //   { year: 2020, event: "Green School Certified", icon: FaStar },
+  //   { year: 2024, event: "Golden Jubilee Celebrations", icon: FaStar },
+  // ];
 
   const achievements = [
     {
@@ -176,11 +170,11 @@ const SchoolHistory = () => {
     },
   ];
 
-  const notablePrincipals = [
-    { name: "Mr. Ashok Verma", tenure: "1975-1990", contribution: "Founded strong academic tradition" },
-    { name: "Mrs. Kavya Desai", tenure: "1990-2005", contribution: "Led modernization initiatives" },
-    { name: "Dr. Vikram Patel", tenure: "2005-Present", contribution: "Brought holistic excellence" },
-  ];
+  // const notablePrincipals = [
+  //   { name: "Mr. Ashok Verma", tenure: "1975-1990", contribution: "Founded strong academic tradition" },
+  //   { name: "Mrs. Kavya Desai", tenure: "1990-2005", contribution: "Led modernization initiatives" },
+  //   { name: "Dr. Vikram Patel", tenure: "2005-Present", contribution: "Brought holistic excellence" },
+  // ];
 
   return (
     <div className="w-full">
@@ -188,7 +182,7 @@ const SchoolHistory = () => {
       <section className="w-full py-12 px-4" style={{ backgroundColor: "#800000" }}>
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-roman font-bold text-white mb-2">School History</h1>
-          <p className="text-lg text-gray-200">A Journey of 50 Years Excellence & Growth</p>
+          <p className="text-lg text-gray-200">A Journey of 30 Years Excellence & Growth</p>
         </div>
       </section>
 
@@ -196,7 +190,7 @@ const SchoolHistory = () => {
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Dungarpur Public School, Dungarpur has been a beacon of educational excellence for over five decades. Since its establishment in 1975, the school has remained committed to nurturing minds, building character, and fostering a love for learning in thousands of students. Our rich legacy is built on the foundation of vision, dedication, and an unwavering commitment to quality education.
+            Dungarpur Public School, Dungarpur has been a beacon of educational excellence for over three decades. Since its establishment in 1975, the school has remained committed to nurturing minds, building character, and fostering a love for learning in thousands of students. Our rich legacy is built on the foundation of vision, dedication, and an unwavering commitment to quality education.
           </p>
         </div>
       </section>
@@ -205,7 +199,7 @@ const SchoolHistory = () => {
       <section className="w-full py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Our Founders</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             {founders.map((founder, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-md text-center border-t-4 border-secondary">
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary flex items-center justify-center">
@@ -222,7 +216,7 @@ const SchoolHistory = () => {
       </section>
 
       {/* Key Milestones Timeline */}
-      <section className="w-full py-16 px-4 bg-white">
+      {/* <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Key Milestones</h2>
           <div className="max-w-5xl mx-auto">
@@ -243,7 +237,7 @@ const SchoolHistory = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Decade-wise History */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -352,7 +346,7 @@ const SchoolHistory = () => {
         </div>
       </section>
 
-      {/* Notable Principals */}
+      {/* Notable Principals
       <section className="w-full py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Leadership Through the Years</h2>
@@ -367,7 +361,7 @@ const SchoolHistory = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Notable Alumni */}
       <section className="w-full py-16 px-4 bg-white">
@@ -430,13 +424,6 @@ const SchoolHistory = () => {
         </div>
       </section>
 
-      {/* CTA Footer */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#800000" }}>
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-roman font-bold text-white mb-4">Celebrating Our Heritage, Shaping the Future</h2>
-          <p className="text-lg text-gray-200">Join our family and be part of a legacy of excellence</p>
-        </div>
-      </section>
     </div>
   );
 };

@@ -68,10 +68,10 @@ const PrincipalMessage = () => {
   const principalProfile = {
     name: "Shelesh Kumar",
     designation: "Principal",
-    qualification: "MCs, B.Ed, M.Ed",
+    qualification: "MSC.",
     experience: "18+ years in School Management",
     email: "principal@mydps.in",
-    phone: "+91 87399 25438",
+    phone: "+91 86969 23797",
   };
 
   return (
@@ -115,7 +115,7 @@ const PrincipalMessage = () => {
                   Dear Parents, Students, and Members of the DPS Community,
                 </p>
                 <p>
-                  It is with immense pride and gratitude that I welcome you to Dungarpur Public School, Dungarpur. Over the past 50 years, our institution has been dedicated to the holistic development of our students, preparing them not just for examinations but for life itself.
+                  It is with immense pride and gratitude that I welcome you to Dungarpur Public School, Dungarpur. Over the past 30 years, our institution has been dedicated to the holistic development of our students, preparing them not just for examinations but for life itself.
                 </p>
                 <p>
                   At DPS, we believe that education extends far beyond the confines of the classroom. We strive to nurture critical thinkers, compassionate leaders, and responsible global citizens who will make meaningful contributions to society. Our commitment is to provide an environment where every child can discover their unique potential and develop the confidence to chase their dreams.
