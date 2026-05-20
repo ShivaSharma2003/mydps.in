@@ -110,7 +110,7 @@ const ChairmanMessage = () => {
                 </p>
                 <p className="font-roman font-semibold" style={{ color: "#800000" }}>
                   With warm wishes and optimistic vision,<br />
-                  Rajesh Kumar Singh<br />
+                  Vikas Ladia<br />
                   Chairman, DPS Dungarpur
                 </p>
               </div>
