@@ -20,6 +20,7 @@ const Navbar = () => {
       label: "About Us",
       href: "#",
       submenu: [
+        { label: "Chairman Message", href: "/chairman-message" },
         { label: "Principal Message", href: "/principal-message" },
         { label: "School History", href: "/school-history" },
         { label: "Staff Members", href: "/staff-members" },

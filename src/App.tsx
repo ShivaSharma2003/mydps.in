@@ -19,6 +19,7 @@ import Governance from "./Pages/Governance";
 import Admissions from "./Pages/Admissions";
 import FeeStructure from "./Pages/FeeStructure";
 import PrincipalMessage from "./Pages/PrincipalMessage";
+import ChairmanMessage from "./Pages/ChairmanMessage";
 import StaffMembers from "./Pages/StaffMembers";
 import SchoolHistory from "./Pages/SchoolHistory";
 import AcdemicCalender from "./Pages/AcdemicCalender";
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/governance" Component={Governance} />
         <Route path="/admissions" Component={Admissions} />
         <Route path="/fee-structure" Component={FeeStructure} />
+        <Route path="/chairman-message" Component={ChairmanMessage} />
         <Route path="/principal-message" Component={PrincipalMessage} />
         <Route path="/school-policies" Component={SchoolPolicies} />
         <Route path="/staff-members" Component={StaffMembers} />
