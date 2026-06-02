@@ -22,12 +22,14 @@ const Header = () => {
 
           {/* Header Content */}
           <div className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-roman font-bold text-primary leading-tight">
-              DUNGARPUR PUBLIC SCHOOL
-            </h1>
-            <p className="font-roman text-primary font-medium text-base sm:text-lg mt-2">
-              In Pursuit of Excellence
-            </p>
+            <div>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-roman font-bold text-primary leading-tight">
+                DUNGARPUR PUBLIC SCHOOL
+              </h1>
+              <p className="font-roman text-primary font-medium text-center sm:text-lg -mt-3">
+                A Senior Secondary Co-Education English Medium School
+              </p>
+            </div>
           </div>
         </div>
       </div>

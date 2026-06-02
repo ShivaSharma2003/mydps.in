@@ -56,36 +56,6 @@ const ContactUs = () => {
       email: "principal@srsl.in",
       timings: "8:00 AM - 3:30 PM",
     },
-    {
-      dept: "Admissions",
-      phone: "+91-2964-224568",
-      email: "admissions@srsl.in",
-      timings: "8:00 AM - 4:00 PM",
-    },
-    {
-      dept: "Academic Department",
-      phone: "+91-2964-224569",
-      email: "academics@srsl.in",
-      timings: "8:00 AM - 3:30 PM",
-    },
-    {
-      dept: "Finance & Fee",
-      phone: "+91-2964-224570",
-      email: "finance@srsl.in",
-      timings: "9:00 AM - 2:00 PM",
-    },
-    {
-      dept: "Sports Department",
-      phone: "+91-2964-224571",
-      email: "sports@srsl.in",
-      timings: "3:30 PM - 6:00 PM",
-    },
-    {
-      dept: "Counseling Services",
-      phone: "+91-2964-224572",
-      email: "counseling@srsl.in",
-      timings: "8:00 AM - 4:00 PM",
-    },
   ];
 
   const socialLinks = [
@@ -270,27 +240,27 @@ const ContactUs = () => {
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Department Contacts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6">
             {departments.map((dept, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-b-4 border-secondary">
+              <div key={index} className="bg-linear-to-br from-gray-50 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-b-4 border-secondary">
                 <h3 className="text-lg font-roman font-bold text-primary mb-4">{dept.dept}</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <FaPhone className="text-secondary mt-1 flex-shrink-0" />
+                    <FaPhone className="text-secondary mt-1 shrink-0" />
                     <div>
                       <p className="text-xs text-gray-500 font-semibold">PHONE</p>
                       <p className="text-gray-700 font-semibold">{dept.phone}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <FaEnvelope className="text-secondary mt-1 flex-shrink-0" />
+                    <FaEnvelope className="text-secondary mt-1 shrink-0" />
                     <div>
                       <p className="text-xs text-gray-500 font-semibold">EMAIL</p>
                       <p className="text-gray-700 text-sm break-all">{dept.email}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <FaClock className="text-secondary mt-1 flex-shrink-0" />
+                    <FaClock className="text-secondary mt-1 shrink-0" />
                     <div>
                       <p className="text-xs text-gray-500 font-semibold">HOURS</p>
                       <p className="text-gray-700 text-sm">{dept.timings}</p>

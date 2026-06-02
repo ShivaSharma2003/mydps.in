@@ -34,6 +34,7 @@ const Navbar = () => {
         { label: "Governance", href: "/governance" },
         { label: "Admissions", href: "/admissions" },
         { label: "Fee Structure", href: "/fee-structure" },
+        { label: "Scholarships", href: "/scholarships" },
       ],
     },
     {

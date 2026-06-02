@@ -18,11 +18,13 @@ import SchoolPolicies from "./Pages/SchoolPolicies";
 import Governance from "./Pages/Governance";
 import Admissions from "./Pages/Admissions";
 import FeeStructure from "./Pages/FeeStructure";
+import Scholarships from "./Pages/Scholarships";
 import PrincipalMessage from "./Pages/PrincipalMessage";
 import ChairmanMessage from "./Pages/ChairmanMessage";
 import StaffMembers from "./Pages/StaffMembers";
 import SchoolHistory from "./Pages/SchoolHistory";
 import AcdemicCalender from "./Pages/AcdemicCalender";
+import WhatsAppChat from "./components/WhatsAppChat";
 
 
 const App = () => {
@@ -50,6 +52,7 @@ const App = () => {
         <Route path="/governance" Component={Governance} />
         <Route path="/admissions" Component={Admissions} />
         <Route path="/fee-structure" Component={FeeStructure} />
+        <Route path="/scholarships" Component={Scholarships} />
         <Route path="/chairman-message" Component={ChairmanMessage} />
         <Route path="/principal-message" Component={PrincipalMessage} />
         <Route path="/school-policies" Component={SchoolPolicies} />
@@ -58,6 +61,7 @@ const App = () => {
         <Route path="/academic-calender" Component={AcdemicCalender} />
       </Routes>
       <Footer />
+      <WhatsAppChat />
     </>
   );
 };
