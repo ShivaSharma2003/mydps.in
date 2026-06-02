@@ -373,7 +373,7 @@ const FireNOC = () => {
                 description: "Official Fire No Objection Certificate from Fire Department",
                 fileType: "PDF",
                 size: "2.5 MB",
-                href: "/files/FIRE NOC DPS 2026.pdf",
+                href: "/docs/fire.pdf",
               }
             ].map((doc, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-secondary">
