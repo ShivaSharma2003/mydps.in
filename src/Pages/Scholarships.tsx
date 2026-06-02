@@ -13,39 +13,63 @@ const Scholarships = () => {
   const scholarshipTypes = [
     {
       id: 1,
-      name: "Merit Scholarship",
+      name: "Sibling Scholarship",
       icon: FaAward,
-      benefit: "Up to 50% fee waiver",
-      description: "Awarded to students with outstanding academic performance",
-      eligibility: "Minimum 85% marks in previous class",
-      criteria: "Entrance test performance and academic records",
+      benefit: "Up to 100% fee waiver",
+      description:
+        "If three siblings (from the same parents) are studying in the school, the youngest child will be granted a full fee waiver.",
+      condition:
+        "Applicable only when all three siblings are enrolled simultaneously. The scholarship will be revoked if any sibling leaves the school. Not combinable with other scholarships.",
     },
     {
       id: 2,
-      name: "Need-Based Scholarship",
+      name: "Hope Scholarship",
       icon: FaBook,
       benefit: "Up to 75% fee waiver",
-      description: "For financially underprivileged but talented students",
-      eligibility: "Minimum 75% marks in previous class",
-      criteria: "Financial assessment and merit consideration",
+      description:
+        "Children of a widow parent facing financial hardship may be granted ",
+      condition:
+        "Eligibility will be assessed based on financial documents and family circumstances. The scholarship is renewable annually based on academic performance and conduct. Not combinable with other scholarships.",
     },
     {
       id: 3,
-      name: "Sports Scholarship",
+      name: "Beti Pragati Scholarship",
       icon: FaGraduationCap,
-      benefit: "Up to 40% fee waiver",
-      description: "For students excelling in sports and athletics",
-      eligibility: "District/State level sports achievements",
-      criteria: "Sports performance and potential assessment",
+      benefit: "Up to 50% fee waiver",
+      description:
+        "For two girl children of the same parents belonging to the Below Poverty Line(BPL) category ",
+      condition:
+        "Applicable only when both children are enrolled simultaneously. The scholarship will be revoked if any child leaves the school. Not combinable with other scholarships.",
     },
     {
       id: 4,
-      name: "Girl Child Scholarship",
+      name: "Veer Shahid Scholarship",
       icon: FaAward,
-      benefit: "Up to 35% fee waiver",
-      description: "To promote education among girl students",
-      eligibility: "Minimum 70% marks in previous class",
-      criteria: "Academic merit and leadership qualities",
+      benefit: "Up to 25% fee waiver",
+      description:
+        "For children of martyrs who have sacrificed their lives in the line of duty for the nation.",
+      condition:
+        "Applicable only for students who have lost their father or guardian in the line of duty. The scholarship is renewable annually based on academic performance and conduct. Not combinable with other scholarships.",
+    },
+    {
+      id: 5,
+      name: "Guru Parivar Scholarship",
+      icon: FaAward,
+      benefit: "Up to 50% fee waiver",
+      description:
+        "For children of teachers and staff members of DPS Dungarpur who have served the school for a minimum of 5 years.",
+      condition:
+        "Applicable only for children of teachers and staff members who have served the school for a minimum of 5 years. The scholarship is renewable annually based on academic performance and conduct. Not combinable with other scholarships.",
+    },
+    {
+      id: 6,
+      name: "Excellence & Opportunity Scholarship",
+      icon: FaAward,
+      benefit: "Up to 25% fee waiver",
+      description:
+        "For students who have demonstrated exceptional academic performance, sports achievements, or co-curricular excellence in their previous school.",
+      condition:
+        "Eligibility will be assessed based on previous academic records, sports achievements, and co-curricular activities. The scholarship is renewable annually based on continued performance. Not combinable with other scholarships.",
     },
   ];
 
@@ -93,7 +117,8 @@ const Scholarships = () => {
         "Yes, scholarships are renewable annually based on academic performance, attendance, and conduct. Students must maintain minimum grades to retain the scholarship.",
     },
     {
-      question: "What is the minimum marks required for scholarship consideration?",
+      question:
+        "What is the minimum marks required for scholarship consideration?",
       answer:
         "For Merit Scholarship: 85%, Need-Based: 75%, Sports Scholarship: 70%, Girl Child: 70%. However, these are baseline requirements and actual selection depends on merit list.",
     },
@@ -142,9 +167,9 @@ const Scholarships = () => {
             DPS Dungarpur is committed to making quality education accessible to
             deserving students. We offer comprehensive scholarship programs to
             recognize and reward academic excellence, support financially
-            disadvantaged students, and encourage talent in sports and co-curricular
-            activities. Our scholarships empower students to pursue their dreams
-            without financial constraints.
+            disadvantaged students, and encourage talent in sports and
+            co-curricular activities. Our scholarships empower students to
+            pursue their dreams without financial constraints.
           </p>
         </div>
       </section>
@@ -155,7 +180,7 @@ const Scholarships = () => {
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">
             Scholarship Categories
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {scholarshipTypes.map((scholarship) => {
               const IconComponent = scholarship.icon;
               return (
@@ -164,24 +189,20 @@ const Scholarships = () => {
                   className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-secondary"
                 >
                   <div className="flex items-center gap-3 mb-4">
-                    <IconComponent className="text-3xl text-secondary flex-shrink-0" />
+                    <IconComponent className="text-3xl text-secondary shrink-0" />
                     <h3 className="text-lg font-roman font-bold text-primary">
                       {scholarship.name}
                     </h3>
                   </div>
                   <div className="space-y-3">
                     <div className="p-3 bg-yellow-50 rounded text-center">
-                      <p className="font-roman font-bold text-secondary text-lg">
+                      <p className="font-roman font-bold text-primary text-lg">
                         {scholarship.benefit}
                       </p>
                     </div>
-                    <p className="text-sm text-gray-600">{scholarship.description}</p>
-                    <div className="pt-2 border-t">
-                      <p className="text-xs text-gray-500 font-semibold mb-1">
-                        ELIGIBILITY
-                      </p>
-                      <p className="text-sm text-gray-700">{scholarship.eligibility}</p>
-                    </div>
+                    <p className="text-sm text-gray-600">
+                      {scholarship.description}
+                    </p>
                   </div>
                 </div>
               );
@@ -253,7 +274,10 @@ const Scholarships = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {requiredDocuments.map((item, index) => (
-                <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md">
+                <div
+                  key={index}
+                  className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md"
+                >
                   <FaFileAlt className="text-secondary text-2xl flex-shrink-0" />
                   <div>
                     <h4 className="font-roman font-bold text-primary">
@@ -268,10 +292,10 @@ const Scholarships = () => {
             </div>
             <div className="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-400">
               <p className="text-blue-800">
-                <span className="font-roman font-bold">Note:</span> Please ensure
-                all documents are attested by school principal or notary. Submit
-                soft copies during online registration and original documents during
-                document verification.
+                <span className="font-roman font-bold">Note:</span> Please
+                ensure all documents are attested by school principal or notary.
+                Submit soft copies during online registration and original
+                documents during document verification.
               </p>
             </div>
           </div>
@@ -305,7 +329,10 @@ const Scholarships = () => {
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+              <div
+                key={index}
+                className="bg-gray-50 rounded-lg shadow-md overflow-hidden"
+              >
                 <button
                   onClick={() =>
                     setExpandedFAQ(expandedFAQ === index ? null : index)

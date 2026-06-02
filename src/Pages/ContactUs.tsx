@@ -32,7 +32,7 @@ const ContactUs = () => {
     {
       icon: FaEnvelope,
       title: "Email",
-      details: ["principal@srsl.in"],
+      details: ["principaldps@srsl.in"],
       label: "Send us your queries anytime",
     },
     {
@@ -52,8 +52,8 @@ const ContactUs = () => {
   const departments = [
     {
       dept: "Principal's Office",
-      phone: "+91-2964-224567",
-      email: "principal@srsl.in",
+      phone: "+91-95210-19058",
+      email: "principaldps@srsl.in",
       timings: "8:00 AM - 3:30 PM",
     },
   ];
@@ -306,7 +306,7 @@ const ContactUs = () => {
           <div className="max-w-4xl mx-auto bg-blue-50 p-8 rounded-lg border-l-4 border-primary">
             <ul className="space-y-4">
               {[
-                "For admission enquiries, please visit our Admissions page or call +91-2964-224568",
+                "For admission enquiries, please visit our Admissions page or call +91-95210-19058",
                 "For fee-related queries, contact the Finance Department during office hours",
                 "For academic concerns, schedule an appointment with the Academic Head",
                 "For general inquiries, please fill out the contact form or call our main office",
