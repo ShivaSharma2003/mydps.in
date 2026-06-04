@@ -56,7 +56,7 @@ const Footer = () => {
                 <br />
                 Public School
               </h3>
-              <p className="text-xs text-gray-300 mt-2 font-medium">
+              <p className="text-xs text-gray-300 font-medium italic">
                 In Pursuit of Excellence
               </p>
               <p className="text-xs text-gray-400 mt-1">

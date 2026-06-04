@@ -25,7 +25,7 @@ const MandatoryDisclosure = () => {
                 </h3>
               </div>
               <iframe
-                src="/files/MANDATORY PUBLIC DISCLOSURE.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                src="/docs/MANDATORY PUBLIC DISCLOSURE.pdf#toolbar=1&navpanes=0&scrollbar=1"
                 title="Mandatory Disclosure PDF"
                 className="w-full"
                 style={{ height: "700px", border: "none" }}

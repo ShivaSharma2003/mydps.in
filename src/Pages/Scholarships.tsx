@@ -15,7 +15,7 @@ const Scholarships = () => {
       id: 1,
       name: "Sibling Scholarship",
       icon: FaAward,
-      benefit: "Up to 100% fee waiver",
+      benefit: "100% fee waiver",
       description:
         "If three siblings (from the same parents) are studying in the school, the youngest child will be granted a full fee waiver.",
       condition:
@@ -25,7 +25,7 @@ const Scholarships = () => {
       id: 2,
       name: "Hope Scholarship",
       icon: FaBook,
-      benefit: "Up to 75% fee waiver",
+      benefit: "25% fee waiver",
       description:
         "Children of a widow parent facing financial hardship may be granted ",
       condition:
@@ -35,7 +35,7 @@ const Scholarships = () => {
       id: 3,
       name: "Beti Pragati Scholarship",
       icon: FaGraduationCap,
-      benefit: "Up to 50% fee waiver",
+      benefit: "50% fee waiver",
       description:
         "For two girl children of the same parents belonging to the Below Poverty Line(BPL) category ",
       condition:
@@ -45,7 +45,7 @@ const Scholarships = () => {
       id: 4,
       name: "Veer Shahid Scholarship",
       icon: FaAward,
-      benefit: "Up to 25% fee waiver",
+      benefit: "25% fee waiver",
       description:
         "For children of martyrs who have sacrificed their lives in the line of duty for the nation.",
       condition:
@@ -55,7 +55,7 @@ const Scholarships = () => {
       id: 5,
       name: "Guru Parivar Scholarship",
       icon: FaAward,
-      benefit: "Up to 50% fee waiver",
+      benefit: "50% fee waiver",
       description:
         "For children of teachers and staff members of DPS Dungarpur who have served the school for a minimum of 5 years.",
       condition:
@@ -65,7 +65,7 @@ const Scholarships = () => {
       id: 6,
       name: "Excellence & Opportunity Scholarship",
       icon: FaAward,
-      benefit: "Up to 25% fee waiver",
+      benefit: "25% fee waiver",
       description:
         "For students who have demonstrated exceptional academic performance, sports achievements, or co-curricular excellence in their previous school.",
       condition:

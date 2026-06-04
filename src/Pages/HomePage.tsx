@@ -6,25 +6,24 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const quickLinks = [
-    { icon: FaBook, label: "Academics", path: "/achievements/academics", color: "bg-primary" },
-    { icon: FaTrophy, label: "Sports", path: "/achievements/sports", color: "bg-primary" },
-    { icon: FaUsers, label: "Staff", path: "/staff-members", color: "bg-primary" },
-    { icon: FaCalendar, label: "Events", path: "/achievements/cultural-events", color: "bg-primary" },
-    { icon: FaPhone, label: "Contact", path: "/contact-us", color: "bg-primary" },
-    { icon: FaGraduationCap, label: "Admissions", path: "/admissions", color: "bg-secondary text-primary" },
+    { icon: FaBook, label: "Academics", path: "/achievements/academics" },
+    { icon: FaTrophy, label: "Sports", path: "/achievements/sports" },
+    { icon: FaUsers, label: "Staff", path: "/staff-members" },
+    { icon: FaCalendar, label: "Events", path: "/achievements/cultural-events" },
+    { icon: FaPhone, label: "Contact", path: "/contact-us" },
+    { icon: FaGraduationCap, label: "Admissions", path: "/admissions" },
   ];
 
   return (
     <div className="w-full">
-      {/* Hero Section - Carousel */}
       <CrouselSection />
 
       {/* Welcome Section */}
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-roman font-bold text-primary mb-4">Welcome to Dungarpur Public School</h2>
-          <p className="text-lg font-roman text-gray-600 mb-6">In Pursuit of Excellence</p>
-          <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          <h2 className="text-4xl font-roman font-bold text-primary">Welcome to Dungarpur Public School</h2>
+          <p className="text-lg font-roman text-gray-600 font-bold italic mb-4">In Pursuit of Excellence</p>
+          <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto italic">
             Dungarpur Public School, Dungarpur is committed to providing world-class education that fosters academic excellence, character development, and holistic growth. Our dedicated faculty and state-of-the-art facilities ensure every student reaches their full potential.
           </p>
         </div>
@@ -39,7 +38,7 @@ const HomePage = () => {
               <button
                 key={index}
                 onClick={() => navigate(link.path)}
-                className={`${link.color} p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center gap-3 text-white cursor-pointer`}
+                className="p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center gap-3 text-primary cursor-pointer border-white border-2 hover:border-primary"
               >
                 <link.icon className="text-4xl" />
                 <span className="font-roman font-semibold text-lg">{link.label}</span>
@@ -60,7 +59,7 @@ const HomePage = () => {
               { title: "Modern Facilities", desc: "Well-equipped labs and learning spaces" },
               { title: "Dedicated Staff", desc: "Experienced and caring faculty members" },
             ].map((item, index) => (
-              <div key={index} className="text-center p-6 border-l-4 border-secondary">
+              <div key={index} className="text-center p-6 border-l-4 border-primary">
                 <h4 className="text-xl font-roman font-bold text-primary mb-3">{item.title}</h4>
                 <p className="text-gray-600">{item.desc}</p>
               </div>
@@ -85,10 +84,9 @@ const HomePage = () => {
               <button
                 key={index}
                 onClick={() => navigate(item.path)}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:border-b-4 hover:border-secondary transition-all duration-300 text-left cursor-pointer"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:border-b-4 hover:border-primary transition-all duration-300 text-left cursor-pointer"
               >
                 <h4 className="font-roman font-bold text-primary text-lg">{item.title}</h4>
-                <div className="h-1 w-12 bg-secondary mt-2"></div>
               </button>
             ))}
           </div>

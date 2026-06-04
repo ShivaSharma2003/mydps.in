@@ -118,7 +118,7 @@ const PrincipalMessage = () => {
   ];
 
   const principalProfile = {
-    name: "Shelesh Kumar",
+    name: "Mr. Shelesh Kumar",
     designation: "Principal",
     qualification: "MSC. B.Ed",
     experience: "18+ years in School Management",
@@ -193,7 +193,7 @@ const PrincipalMessage = () => {
               <h3 className="text-3xl font-roman font-bold text-primary mb-6">
                 A Warm Welcome
               </h3>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
+              <div className="space-y-4 text-gray-700 leading-relaxed italic">
                 <p>Dear Parents, Students, and Members of the DPS Community,</p>
                 <p>
                   It is with immense pride and gratitude that I welcome you to

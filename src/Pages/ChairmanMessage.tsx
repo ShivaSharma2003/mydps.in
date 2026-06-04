@@ -71,7 +71,7 @@ const ChairmanMessage = () => {
   ];
 
   const chairmanProfile = {
-    name: "Vikas Ladia",
+    name: "Mr. Vikas Ladia",
     designation: "Chairman",
     qualification: "",
     experience: "30+ years in Education & Administration",
@@ -150,7 +150,7 @@ const ChairmanMessage = () => {
               >
                 A Message of Vision
               </h3>
-              <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+              <div className="space-y-4 text-gray-700 leading-relaxed text-justify italic">
                 <p>Dear Fellow Citizens of Dungarpur,</p>
                 <p>
                   I was deputed to Dungarpur by my family on 1st July 1995 and
