@@ -7,13 +7,13 @@ const Admissions = () => {
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
   const admissionClasses = [
-    { class: "Nursery", age: "3+ years", batch: "July 2024" },
-    { class: "KG", age: "3.5 - 4.5 years", batch: "July 2024" },
-    { class: "Class I", age: "4.5 - 5.5 years", batch: "July 2024" },
-    { class: "Class II - V", age: "As per DOB", batch: "July 2024" },
-    { class: "Class VI - VIII", age: "As per DOB", batch: "July 2024" },
-    { class: "Class IX", age: "14+ years", batch: "July 2024" },
-    { class: "Class XI", age: "16+ years", batch: "July 2024" },
+    { class: "Nursery", age: "3+ years", batch: "July 2026" },
+    { class: "KG", age: "3.5 - 4.5 years", batch: "July 2026" },
+    { class: "Class I", age: "4.5 - 5.5 years", batch: "July 2026" },
+    { class: "Class II - V", age: "As per DOB", batch: "July 2026" },
+    { class: "Class VI - VIII", age: "As per DOB", batch: "July 2026" },
+    { class: "Class IX", age: "14+ years", batch: "July 2026" },
+    { class: "Class XI", age: "16+ years", batch: "July 2026" },
   ];
 
   const admissionProcess = [
@@ -70,13 +70,13 @@ const Admissions = () => {
   ];
 
   const importantDates = [
-    { event: "Online Registration Opens", date: "1st March 2024" },
-    { event: "Registration Closes", date: "30th April 2024" },
-    { event: "Entrance Test/Interview", date: "15th - 20th May 2024" },
-    { event: "Merit List Declaration", date: "3rd June 2024" },
-    { event: "Admission Confirmation Deadline", date: "15th June 2024" },
-    { event: "Orientation Program", date: "20th June 2024" },
-    { event: "Classes Begin", date: "1st July 2024" },
+    { event: "Online Registration Opens", date: "1st March 2026" },
+    { event: "Registration Closes", date: "30th April 2026" },
+    { event: "Entrance Test/Interview", date: "15th - 20th May 2026" },
+    { event: "Merit List Declaration", date: "3rd June 2026" },
+    { event: "Admission Confirmation Deadline", date: "15th June 2026" },
+    { event: "Orientation Program", date: "20th June 2026" },
+    { event: "Classes Begin", date: "1st July 2026" },
   ];
 
   const faqs = [
@@ -292,19 +292,17 @@ const Admissions = () => {
             <div className="text-center p-6">
               <FaPhone className="text-4xl text-secondary mx-auto mb-4" />
               <h3 className="font-roman font-bold text-primary text-lg mb-2">Phone</h3>
-              <p className="text-gray-700">+91-XXXX-XXXXXX</p>
-              <p className="text-gray-700">+91-XXXX-XXXXXX</p>
+              <p className="text-gray-700">+91-95210 19058</p>
             </div>
             <div className="text-center p-6">
               <FaEnvelope className="text-4xl text-secondary mx-auto mb-4" />
               <h3 className="font-roman font-bold text-primary text-lg mb-2">Email</h3>
-              <p className="text-gray-700">admissions@dpsungarpur.edu.in</p>
-              <p className="text-gray-700">info@dpsdungarpur.edu.in</p>
+              <p className="text-gray-700">principaldps@srsl.in</p>
             </div>
             <div className="text-center p-6">
               <FaMapMarkerAlt className="text-4xl text-secondary mx-auto mb-4" />
               <h3 className="font-roman font-bold text-primary text-lg mb-2">Location</h3>
-              <p className="text-gray-700">Dungarpur</p>
+              <p className="text-gray-700">Bichhiwara Road, Dungarpur</p>
               <p className="text-gray-700">Rajasthan, India</p>
             </div>
           </div>

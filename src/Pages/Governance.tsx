@@ -12,12 +12,12 @@ import {
 } from "react-icons/fa";
 
 const Governance = () => {
-
   const governingBody = [
     {
       role: "Chairman",
       name: "Mr. Vikas Ladia",
       experience: "25+ years in Education & Business",
+      qualification: "MSC.",
       contact: "vikas@srsl.in",
     },
     {
@@ -25,21 +25,19 @@ const Governance = () => {
       name: "Mr. Shelesh Kumar",
       qualification: "MSC.",
       experience: "18+ years in School Management",
-      contact: "principal@dps.in",
+      contact: "principaldps@srsl.in",
     },
     {
       role: "Member",
-      name: "Mr. S.C. Joshi",
-      qualification: "MSC.",
-      experience: "18+ years in School Management",
-      contact: "principal@dpsdungarpur.edu.in",
+      name: "Mr. Suresh Chandra Joshi",
+      qualification: "M.A. (Economics)",
+      experience: "40 Years of HR Management",
     },
     {
       role: "Treasurer",
       name: "Mr. Harish Ajmera",
-      qualification: "MSC.",
-      experience: "18+ years in School Management",
-      contact: "principal@dpsdungarpur.edu.in",
+      qualification: "M.Com",
+      experience: "",
     },
   ];
 

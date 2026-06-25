@@ -1,170 +1,157 @@
-import { FaTrophy, FaMedal, FaAward, FaFire, FaCalendar, FaStar, FaCheckCircle, FaChartLine, FaUser, FaHeart } from "react-icons/fa";
-import { useState } from "react";
+import { FaTrophy,  FaAward, FaFire,  FaStar, FaCheckCircle, FaChartLine, FaHeart } from "react-icons/fa";
 
 const SportsAchievement = () => {
-  const [selectedSport, setSelectedSport] = useState("all");
-  const [expandedTeam, setExpandedTeam] = useState<number | null>(null);
 
-  const sports = [
-    { id: "all", name: "All Sports", count: 8 },
-    { id: "cricket", name: "Cricket", count: 12 },
-    { id: "badminton", name: "Badminton", count: 18 },
-    { id: "athletics", name: "Athletics", count: 25 },
-    { id: "volleyball", name: "Volleyball", count: 8 },
-    { id: "basketball", name: "Basketball", count: 14 },
-    { id: "tennis", name: "Tennis", count: 6 },
-    { id: "other", name: "Other Sports", count: 10 },
-  ];
 
-  const achievements = [
-    {
-      sport: "cricket",
-      title: "State Level Cricket Champions",
-      year: 2024,
-      category: "U-19 Boys",
-      medal: "Gold",
-      details: "Won the Inter-School State Cricket Championship with outstanding batting and bowling performance",
-      highlight: true,
-    },
-    {
-      sport: "badminton",
-      title: "National Badminton Tournament",
-      year: 2024,
-      category: "U-17 Girls Singles",
-      medal: "Silver",
-      details: "Runner-up in National Inter-School Badminton Championship",
-      highlight: true,
-    },
-    {
-      sport: "athletics",
-      title: "State Athletics Meet",
-      year: 2024,
-      category: "100m Dash (Girls)",
-      medal: "Gold",
-      details: "Set new school record with 12.5 seconds timing",
-      highlight: true,
-    },
-    {
-      sport: "athletics",
-      title: "District 4x400m Relay",
-      year: 2024,
-      category: "Boys",
-      medal: "Gold",
-      details: "Won district-level relay with outstanding coordination",
-      highlight: false,
-    },
-    {
-      sport: "basketball",
-      title: "City Basketball Tournament",
-      year: 2024,
-      category: "Boys",
-      medal: "Bronze",
-      details: "Finished 3rd in city-level inter-school basketball championship",
-      highlight: false,
-    },
-    {
-      sport: "volleyball",
-      title: "Regional Volleyball Championship",
-      year: 2024,
-      category: "Girls",
-      medal: "Gold",
-      details: "Won regional championship with perfect strategic gameplay",
-      highlight: false,
-    },
-    {
-      sport: "badminton",
-      title: "Mixed Doubles Championship",
-      year: 2023,
-      category: "U-19",
-      medal: "Gold",
-      details: "Champions of state-level mixed doubles badminton tournament",
-      highlight: false,
-    },
-    {
-      sport: "cricket",
-      title: "T-20 Cricket League",
-      year: 2023,
-      category: "Boys",
-      medal: "Gold",
-      details: "Winners of inter-school T-20 cricket league",
-      highlight: false,
-    },
-    {
-      sport: "athletics",
-      title: "Long Jump District Meet",
-      year: 2023,
-      category: "Boys",
-      medal: "Gold",
-      details: "District champion in long jump with 7.2m jump",
-      highlight: false,
-    },
-    {
-      sport: "tennis",
-      title: "State Tennis Tournament",
-      year: 2023,
-      category: "U-16 Singles",
-      medal: "Silver",
-      details: "Runner-up in state-level tennis championship",
-      highlight: false,
-    },
-  ];
+  // const achievements = [
+  //   {
+  //     sport: "cricket",
+  //     title: "State Level Cricket Champions",
+  //     year: 2024,
+  //     category: "U-19 Boys",
+  //     medal: "Gold",
+  //     details: "Won the Inter-School State Cricket Championship with outstanding batting and bowling performance",
+  //     highlight: true,
+  //   },
+  //   {
+  //     sport: "badminton",
+  //     title: "National Badminton Tournament",
+  //     year: 2024,
+  //     category: "U-17 Girls Singles",
+  //     medal: "Silver",
+  //     details: "Runner-up in National Inter-School Badminton Championship",
+  //     highlight: true,
+  //   },
+  //   {
+  //     sport: "athletics",
+  //     title: "State Athletics Meet",
+  //     year: 2024,
+  //     category: "100m Dash (Girls)",
+  //     medal: "Gold",
+  //     details: "Set new school record with 12.5 seconds timing",
+  //     highlight: true,
+  //   },
+  //   {
+  //     sport: "athletics",
+  //     title: "District 4x400m Relay",
+  //     year: 2024,
+  //     category: "Boys",
+  //     medal: "Gold",
+  //     details: "Won district-level relay with outstanding coordination",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "basketball",
+  //     title: "City Basketball Tournament",
+  //     year: 2024,
+  //     category: "Boys",
+  //     medal: "Bronze",
+  //     details: "Finished 3rd in city-level inter-school basketball championship",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "volleyball",
+  //     title: "Regional Volleyball Championship",
+  //     year: 2024,
+  //     category: "Girls",
+  //     medal: "Gold",
+  //     details: "Won regional championship with perfect strategic gameplay",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "badminton",
+  //     title: "Mixed Doubles Championship",
+  //     year: 2023,
+  //     category: "U-19",
+  //     medal: "Gold",
+  //     details: "Champions of state-level mixed doubles badminton tournament",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "cricket",
+  //     title: "T-20 Cricket League",
+  //     year: 2023,
+  //     category: "Boys",
+  //     medal: "Gold",
+  //     details: "Winners of inter-school T-20 cricket league",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "athletics",
+  //     title: "Long Jump District Meet",
+  //     year: 2023,
+  //     category: "Boys",
+  //     medal: "Gold",
+  //     details: "District champion in long jump with 7.2m jump",
+  //     highlight: false,
+  //   },
+  //   {
+  //     sport: "tennis",
+  //     title: "State Tennis Tournament",
+  //     year: 2023,
+  //     category: "U-16 Singles",
+  //     medal: "Silver",
+  //     details: "Runner-up in state-level tennis championship",
+  //     highlight: false,
+  //   },
+  // ];
 
-  const teams = [
-    {
-      name: "Boys Cricket Team",
-      sport: "Cricket",
-      coach: "Mr. Rajesh Singh",
-      members: 15,
-      achievements: ["State Champions 2024", "District Finals 3 times", "School Record: 287 runs"],
-      recent: "Won State Championship 2024",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      name: "Girls Badminton Team",
-      sport: "Badminton",
-      coach: "Ms. Priya Verma",
-      members: 12,
-      achievements: ["National Tournament Runners-up 2024", "State Champions 2023", "50+ medals in 3 years"],
-      recent: "Silver in National Tournament 2024",
-      color: "from-pink-500 to-pink-600",
-    },
-    {
-      name: "Boys Athletics Team",
-      sport: "Athletics",
-      coach: "Mr. Arjun Kumar",
-      members: 24,
-      achievements: ["100+ medals in 3 years", "State Meet Champions 2023", "5 School Records"],
-      recent: "Won 25+ medals in District Meet 2024",
-      color: "from-yellow-500 to-yellow-600",
-    },
-    {
-      name: "Girls Volleyball Team",
-      sport: "Volleyball",
-      coach: "Mrs. Anjali Singh",
-      members: 14,
-      achievements: ["Regional Champions 2024", "State Finalists 2023", "Consistent performers"],
-      recent: "Champions of Regional Championship 2024",
-      color: "from-red-500 to-red-600",
-    },
-    {
-      name: "Boys Basketball Team",
-      sport: "Basketball",
-      coach: "Mr. Vikram Patel",
-      members: 12,
-      achievements: ["City Tournament Bronze 2024", "District Runners-up 2023", "20+ medals"],
-      recent: "Bronze in City Tournament 2024",
-      color: "from-orange-500 to-orange-600",
-    },
-    {
-      name: "Mixed Tennis Team",
-      sport: "Tennis",
-      coach: "Dr. Suresh Desai",
-      members: 8,
-      achievements: ["State Tournament Runners-up 2023", "District Champions 2024", "10+ medals"],
-      recent: "Runners-up in State Tournament 2023",
-      color: "from-green-500 to-green-600",
-    },
-  ];
+  // const teams = [
+  //   {
+  //     name: "Boys Cricket Team",
+  //     sport: "Cricket",
+  //     coach: "Mr. Rajesh Singh",
+  //     members: 15,
+  //     achievements: ["State Champions 2024", "District Finals 3 times", "School Record: 287 runs"],
+  //     recent: "Won State Championship 2024",
+  //     color: "from-blue-500 to-blue-600",
+  //   },
+  //   {
+  //     name: "Girls Badminton Team",
+  //     sport: "Badminton",
+  //     coach: "Ms. Priya Verma",
+  //     members: 12,
+  //     achievements: ["National Tournament Runners-up 2024", "State Champions 2023", "50+ medals in 3 years"],
+  //     recent: "Silver in National Tournament 2024",
+  //     color: "from-pink-500 to-pink-600",
+  //   },
+  //   {
+  //     name: "Boys Athletics Team",
+  //     sport: "Athletics",
+  //     coach: "Mr. Arjun Kumar",
+  //     members: 24,
+  //     achievements: ["100+ medals in 3 years", "State Meet Champions 2023", "5 School Records"],
+  //     recent: "Won 25+ medals in District Meet 2024",
+  //     color: "from-yellow-500 to-yellow-600",
+  //   },
+  //   {
+  //     name: "Girls Volleyball Team",
+  //     sport: "Volleyball",
+  //     coach: "Mrs. Anjali Singh",
+  //     members: 14,
+  //     achievements: ["Regional Champions 2024", "State Finalists 2023", "Consistent performers"],
+  //     recent: "Champions of Regional Championship 2024",
+  //     color: "from-red-500 to-red-600",
+  //   },
+  //   {
+  //     name: "Boys Basketball Team",
+  //     sport: "Basketball",
+  //     coach: "Mr. Vikram Patel",
+  //     members: 12,
+  //     achievements: ["City Tournament Bronze 2024", "District Runners-up 2023", "20+ medals"],
+  //     recent: "Bronze in City Tournament 2024",
+  //     color: "from-orange-500 to-orange-600",
+  //   },
+  //   {
+  //     name: "Mixed Tennis Team",
+  //     sport: "Tennis",
+  //     coach: "Dr. Suresh Desai",
+  //     members: 8,
+  //     achievements: ["State Tournament Runners-up 2023", "District Champions 2024", "10+ medals"],
+  //     recent: "Runners-up in State Tournament 2023",
+  //     color: "from-green-500 to-green-600",
+  //   },
+  // ];
 
   const statistics = [
     { stat: "250+", label: "Total Medals (3 years)" },
@@ -224,54 +211,54 @@ const SportsAchievement = () => {
     },
   ];
 
-  const champions = [
-    {
-      name: "Aarav Singh",
-      sport: "Cricket",
-      achievement: "State U-19 Cricket Champion 2024",
-      role: "Captain & All-rounder",
-      medals: 5,
-    },
-    {
-      name: "Priya Sharma",
-      sport: "Badminton",
-      achievement: "National U-17 Badminton Runner-up 2024",
-      role: "Singles Player",
-      medals: 8,
-    },
-    {
-      name: "Rajesh Kumar",
-      sport: "Athletics",
-      achievement: "State 100m Champion & Record Holder",
-      role: "Sprinter",
-      medals: 12,
-    },
-    {
-      name: "Ananya Patel",
-      sport: "Volleyball",
-      achievement: "Regional Volleyball Champion 2024",
-      role: "Team Captain",
-      medals: 6,
-    },
-    {
-      name: "Arjun Desai",
-      sport: "Basketball",
-      achievement: "City Basketball Tournament Bronze 2024",
-      role: "Point Guard",
-      medals: 4,
-    },
-    {
-      name: "Sneha Verma",
-      sport: "Tennis",
-      achievement: "State U-16 Tennis Runner-up 2023",
-      role: "Singles & Doubles",
-      medals: 5,
-    },
-  ];
+  // const champions = [
+  //   {
+  //     name: "Aarav Singh",
+  //     sport: "Cricket",
+  //     achievement: "State U-19 Cricket Champion 2024",
+  //     role: "Captain & All-rounder",
+  //     medals: 5,
+  //   },
+  //   {
+  //     name: "Priya Sharma",
+  //     sport: "Badminton",
+  //     achievement: "National U-17 Badminton Runner-up 2024",
+  //     role: "Singles Player",
+  //     medals: 8,
+  //   },
+  //   {
+  //     name: "Rajesh Kumar",
+  //     sport: "Athletics",
+  //     achievement: "State 100m Champion & Record Holder",
+  //     role: "Sprinter",
+  //     medals: 12,
+  //   },
+  //   {
+  //     name: "Ananya Patel",
+  //     sport: "Volleyball",
+  //     achievement: "Regional Volleyball Champion 2024",
+  //     role: "Team Captain",
+  //     medals: 6,
+  //   },
+  //   {
+  //     name: "Arjun Desai",
+  //     sport: "Basketball",
+  //     achievement: "City Basketball Tournament Bronze 2024",
+  //     role: "Point Guard",
+  //     medals: 4,
+  //   },
+  //   {
+  //     name: "Sneha Verma",
+  //     sport: "Tennis",
+  //     achievement: "State U-16 Tennis Runner-up 2023",
+  //     role: "Singles & Doubles",
+  //     medals: 5,
+  //   },
+  // ];
 
-  const filteredAchievements = selectedSport === "all" 
-    ? achievements 
-    : achievements.filter(ach => ach.sport === selectedSport);
+  // const filteredAchievements = selectedSport === "all" 
+  //   ? achievements 
+  //   : achievements.filter(ach => ach.sport === selectedSport);
 
   return (
     <div className="w-full">
@@ -307,7 +294,7 @@ const SportsAchievement = () => {
       </section>
 
       {/* Sport Categories Filter */}
-      <section className="w-full py-12 px-4 bg-gray-50">
+      {/* <section className="w-full py-12 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-roman font-bold text-primary text-center mb-8">Browse by Sport</h2>
           <div className="flex flex-wrap justify-center gap-3">
@@ -326,10 +313,10 @@ const SportsAchievement = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Achievements Showcase */}
-      <section className="w-full py-16 px-4 bg-white">
+      {/* <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Recent Achievements</h2>
           <div className="space-y-4">
@@ -366,7 +353,7 @@ const SportsAchievement = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sport Categories Overview */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -388,7 +375,7 @@ const SportsAchievement = () => {
       </section>
 
       {/* Teams Showcase */}
-      <section className="w-full py-16 px-4 bg-white">
+      {/* <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Our Teams</h2>
           <div className="space-y-4">
@@ -441,10 +428,10 @@ const SportsAchievement = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Champion Spotlight */}
-      <section className="w-full py-16 px-4 bg-gray-50">
+      {/* <section className="w-full py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Champion Spotlight</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -470,7 +457,7 @@ const SportsAchievement = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Sports Facilities */}
       <section className="w-full py-16 px-4 bg-white">

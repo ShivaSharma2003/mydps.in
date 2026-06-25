@@ -121,14 +121,14 @@ const AcdemicCalender = () => {
     { date: "1-31 May", event: "Extended Summer Break", duration: "31 days" },
   ];
 
-  const examSchedule = [
-    { term: "Term 1", period: "July 1-10", classes: "VI-X", type: "Mid-Term Assessment" },
-    { term: "Term 1", period: "October 28 - November 10", classes: "VI-XII", type: "Final Examinations" },
-    { term: "Term 2", period: "February 1-10", classes: "VI-X", type: "Mid-Term Assessment" },
-    { term: "Term 2", period: "March 1-20", classes: "VI-XII", type: "Final Examinations" },
-    { term: "CBSE", period: "February-March", classes: "X, XII", type: "Board Examinations" },
-    { term: "CBSE", period: "September 8-10", classes: "XII", type: "Simulation Exams" },
-  ];
+  // const examSchedule = [
+  //   { term: "Term 1", period: "July 1-10", classes: "VI-X", type: "Mid-Term Assessment" },
+  //   { term: "Term 1", period: "October 28 - November 10", classes: "VI-XII", type: "Final Examinations" },
+  //   { term: "Term 2", period: "February 1-10", classes: "VI-X", type: "Mid-Term Assessment" },
+  //   { term: "Term 2", period: "March 1-20", classes: "VI-XII", type: "Final Examinations" },
+  //   { term: "CBSE", period: "February-March", classes: "X, XII", type: "Board Examinations" },
+  //   { term: "CBSE", period: "September 8-10", classes: "XII", type: "Simulation Exams" },
+  // ];
 
   const majorEvents = [
     {
@@ -174,7 +174,7 @@ const AcdemicCalender = () => {
       <section className="w-full py-12 px-4" style={{ backgroundColor: "#800000" }}>
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-roman font-bold text-white mb-2">Academic Calendar</h1>
-          <p className="text-lg text-gray-200">2025-26 Academic Year Schedule</p>
+          <p className="text-lg text-gray-200">2026-27 Academic Year Schedule</p>
         </div>
       </section>
 
@@ -182,7 +182,7 @@ const AcdemicCalender = () => {
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            The Academic Calendar provides a comprehensive overview of all important dates, examinations, holidays, and events for the 2025-26 academic year. This schedule helps students, parents, and teachers plan their activities effectively throughout the year.
+            The Academic Calendar provides a comprehensive overview of all important dates, examinations, holidays, and events for the 2026-27 academic year. This schedule helps students, parents, and teachers plan their activities effectively throughout the year.
           </p>
         </div>
       </section>
@@ -288,7 +288,7 @@ const AcdemicCalender = () => {
       </section>
 
       {/* Examination Schedule */}
-      <section className="w-full py-16 px-4 bg-white">
+      {/* <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Examination Schedule</h2>
           <div className="overflow-x-auto">
@@ -318,7 +318,7 @@ const AcdemicCalender = () => {
             </table>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Major Events */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -360,18 +360,16 @@ const AcdemicCalender = () => {
                 title: "Class Timings",
                 icon: FaClock,
                 details: [
-                  "Classes I-V: 8:30 AM - 1:00 PM",
-                  "Classes VI-VIII: 8:30 AM - 3:30 PM",
-                  "Classes IX-XII: 8:30 AM - 4:00 PM",
+                  "Summer: 8:00 AM - 1:50 PM",
+                  "Winter: 9:00 AM - 2:50 PM",
                 ],
               },
               {
                 title: "Result Declaration",
                 icon: FaCheckCircle,
                 details: [
-                  "Term 1: November 20, 2025",
-                  "Term 2: May 15, 2026",
-                  "CBSE Results: April 2026",
+                  "Half Yearly: October 10, 2026",
+                  "Annual Examination: March 27, 2027",
                 ],
               },
               {
@@ -380,7 +378,7 @@ const AcdemicCalender = () => {
                 details: [
                   "Parent-Teacher Meetings: Quarterly",
                   "Assembly: Every Monday",
-                  "Sports Day: September 15, 2025",
+                  "Sports Day: September, 2026",
                 ],
               },
               {
@@ -421,10 +419,14 @@ const AcdemicCalender = () => {
           <h2 className="text-3xl font-roman font-bold text-primary mb-4">Download Calendar</h2>
           <p className="text-gray-700 mb-8">Download the full academic calendar for easy reference</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300">
+            <a
+              href="/docs/calender.pdf"
+              download
+              className="flex items-center justify-center gap-2 px-8 py-4 cursor-pointer bg-primary text-white rounded-lg font-semibold hover:opacity-90 transition-all duration-300"
+            >
               <FaDownload />
               Download PDF
-            </button>
+            </a>
           </div>
         </div>
       </section>

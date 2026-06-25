@@ -49,25 +49,6 @@ const AcademicsAcheivement = () => {
     },
   ];
 
-  const classToppersData = [
-    {
-      class: "Class X",
-      toppers: [
-        { name: "Aarav Singh", percentage: 97.8, subjects: "Science Stream" },
-        { name: "Ishita Sharma", percentage: 96.5, subjects: "All Subjects" },
-        { name: "Rohan Patel", percentage: 95.2, subjects: "Science Stream" },
-      ],
-    },
-    {
-      class: "Class XII",
-      toppers: [
-        { name: "Ananya Gupta", percentage: 98.4, subjects: "Science Stream" },
-        { name: "Arjun Mishra", percentage: 97.6, subjects: "Commerce Stream" },
-        { name: "Priya Verma", percentage: 96.8, subjects: "Humanities Stream" },
-      ],
-    },
-  ];
-
   const programsOffered = [
     { name: "Science Stream", classes: "Classes XI-XII", subjects: "Physics, Chemistry, Biology, Mathematics" },
     { name: "Commerce Stream", classes: "Classes XI-XII", subjects: "Accounts, Economics, Business Studies" },
@@ -149,7 +130,7 @@ const AcademicsAcheivement = () => {
       </section>
 
       {/* Class Toppers */}
-      <section className="w-full py-16 px-4 bg-gray-50">
+      {/* <section className="w-full py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Class Toppers</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -173,7 +154,7 @@ const AcademicsAcheivement = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Programs Offered */}
       <section className="w-full py-16 px-4 bg-white">

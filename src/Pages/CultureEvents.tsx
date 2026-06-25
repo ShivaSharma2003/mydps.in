@@ -1,65 +1,9 @@
-import { FaMusic, FaTheaterMasks, FaGift, FaCalendar, FaTrophy, FaUsers, FaStar } from "react-icons/fa";
-import { useState } from "react";
+import { FaMusic, FaTheaterMasks, FaGift, FaUsers, FaStar } from "react-icons/fa";
+
 
 const CultureEvents = () => {
-  const [expandedEvent, setExpandedEvent] = useState<number | null>(null);
 
-  const upcomingEvents = [
-    {
-      id: 1,
-      name: "Annual Day Celebration",
-      date: "15th December 2024",
-      time: "5:00 PM - 8:00 PM",
-      location: "School Auditorium",
-      description: "Spectacular showcase of student talent including dance, music, drama, and cultural performances. Parents are invited to celebrate the achievements of our students.",
-      highlights: ["Cultural Performances", "Drama Sketches", "Musical Presentations", "Award Ceremony"],
-    },
-    {
-      id: 2,
-      name: "Independence Day Celebration",
-      date: "15th August 2024",
-      time: "9:00 AM - 10:30 AM",
-      location: "School Ground",
-      description: "Patriotic celebration featuring flag hoisting, national anthem, patriotic songs, and speeches celebrating India's independence and diversity.",
-      highlights: ["Flag Hoisting", "Patriotic Songs", "March Past", "National Anthem"],
-    },
-    {
-      id: 3,
-      name: "Republic Day Celebration",
-      date: "26th January 2025",
-      time: "9:00 AM - 10:30 AM",
-      location: "School Ground",
-      description: "Celebration of India's Constitution with cultural programs, patriotic performances, and commemorating the significance of Republic Day.",
-      highlights: ["Flag Hoisting", "Constitution Reading", "Cultural Performances", "Community Participation"],
-    },
-    {
-      id: 4,
-      name: "Diwali Celebration",
-      date: "1st November 2024",
-      time: "2:00 PM - 4:00 PM",
-      location: "School Campus",
-      description: "Festival of lights celebration featuring Rangoli competition, Diya decoration, cultural performances, and festive decorations.",
-      highlights: ["Rangoli Competition", "Diya Decoration", "Folk Dances", "Sweet Distribution"],
-    },
-    {
-      id: 5,
-      name: "Holi Celebration",
-      date: "25th March 2025",
-      time: "2:00 PM - 4:00 PM",
-      location: "School Campus",
-      description: "Festival of colors celebration with water play, colored powder, cultural programs, and traditional delicacies.",
-      highlights: ["Color Fest", "Traditional Games", "Folk Songs", "Festive Treats"],
-    },
-    {
-      id: 6,
-      name: "Inter-School Cultural Competition",
-      date: "10th February 2025",
-      time: "10:00 AM - 5:00 PM",
-      location: "School Auditorium",
-      description: "Students participate in various cultural competitions with schools across the region. Categories include dance, music, drama, and fine arts.",
-      highlights: ["Dance Competition", "Music Fest", "Drama Performance", "Art Exhibition"],
-    },
-  ];
+
 
   const culturalPrograms = [
     {
@@ -139,13 +83,6 @@ const CultureEvents = () => {
     },
   ];
 
-  const pastHighlights = [
-    { year: 2023, event: "Annual Day", highlight: "300+ student performers, 2000+ audience", achievement: "Outstanding" },
-    { year: 2023, event: "Diwali Fest", highlight: "50 Rangoli entries, vibrant celebrations", achievement: "Colorful" },
-    { year: 2024, event: "Inter-School Fest", highlight: "8 schools participated, 15 events", achievement: "Successful" },
-    { year: 2024, event: "Republic Day", highlight: "Grand celebration, 500+ students", achievement: "Patriotic" },
-  ];
-
   return (
     <div className="w-full">
       {/* Page Header */}
@@ -199,64 +136,6 @@ const CultureEvents = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className="w-full py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Upcoming Events</h2>
-          <div className="space-y-4">
-            {upcomingEvents.map((event) => (
-              <div key={event.id} className="bg-gray-50 rounded-lg shadow-md overflow-hidden">
-                <button
-                  onClick={() => setExpandedEvent(expandedEvent === event.id ? null : event.id)}
-                  className="w-full p-6 flex items-center justify-between hover:bg-gray-100 transition-all duration-300 text-left"
-                >
-                  <div className="flex-1">
-                    <div className="flex items-center gap-4">
-                      <div className="p-3 rounded-lg" style={{ backgroundColor: "#800000" }}>
-                        <FaCalendar className="text-xl text-secondary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-roman font-bold text-primary">{event.name}</h3>
-                        <p className="text-sm text-gray-600">{event.date}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <span className="text-secondary text-2xl flex-shrink-0">{expandedEvent === event.id ? "−" : "+"}</span>
-                </button>
-                {expandedEvent === event.id && (
-                  <div className="px-6 pb-6 border-t bg-white">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                      <div>
-                        <p className="text-sm text-gray-500 font-semibold">TIME</p>
-                        <p className="text-gray-700 font-semibold">{event.time}</p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-gray-500 font-semibold">LOCATION</p>
-                        <p className="text-gray-700 font-semibold">{event.location}</p>
-                      </div>
-                      <div>
-                        <p className="text-sm text-gray-500 font-semibold">DATE</p>
-                        <p className="text-gray-700 font-semibold">{event.date}</p>
-                      </div>
-                    </div>
-                    <p className="text-gray-700 mb-4">{event.description}</p>
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <p className="text-sm font-semibold text-primary mb-2">Highlights:</p>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                        {event.highlights.map((highlight, idx) => (
-                          <div key={idx} className="text-sm text-gray-700">
-                            <span className="text-secondary">✓</span> {highlight}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Festival Celebrations */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -283,31 +162,6 @@ const CultureEvents = () => {
         </div>
       </section>
 
-      {/* Past Highlights */}
-      <section className="w-full py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Past Highlights</h2>
-          <div className="max-w-4xl mx-auto space-y-4">
-            {pastHighlights.map((item, index) => (
-              <div key={index} className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-between">
-                <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span className="text-2xl font-roman font-bold text-primary">{item.year}</span>
-                    <h4 className="text-xl font-roman font-bold text-primary">{item.event}</h4>
-                  </div>
-                  <p className="text-gray-700">{item.highlight}</p>
-                </div>
-                <div className="text-right">
-                  <div className="flex items-center gap-2">
-                    <FaTrophy className="text-secondary text-2xl" />
-                    <span className="font-roman font-bold text-primary text-lg">{item.achievement}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Benefits Section */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -331,16 +185,6 @@ const CultureEvents = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#800000" }}>
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-roman font-bold text-white mb-4">Join Our Cultural Journey!</h2>
-          <p className="text-lg text-gray-200 mb-6">Every student has a unique talent waiting to be discovered and celebrated.</p>
-          <button className="px-8 py-3 bg-secondary text-primary font-roman font-bold text-lg rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
-            Learn More About Enrollment
-          </button>
-        </div>
-      </section>
     </div>
   );
 };

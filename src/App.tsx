@@ -25,6 +25,7 @@ import StaffMembers from "./Pages/StaffMembers";
 import SchoolHistory from "./Pages/SchoolHistory";
 import AcdemicCalender from "./Pages/AcdemicCalender";
 import WhatsAppChat from "./components/WhatsAppChat";
+import AdmissionPopup from "./components/AdmissionPopup";
 
 
 const App = () => {
@@ -61,6 +62,7 @@ const App = () => {
         <Route path="/academic-calender" Component={AcdemicCalender} />
       </Routes>
       <Footer />
+      <AdmissionPopup />
       <WhatsAppChat />
     </>
   );

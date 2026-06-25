@@ -1,34 +1,10 @@
-import { FaTrophy, FaUsers, FaBuilding, FaBook, FaStar, FaCheckCircle, FaAward, FaMedal, FaGraduationCap } from "react-icons/fa";
+import { FaTrophy, FaUsers, FaBook, FaStar, FaCheckCircle, FaAward, FaMedal, FaGraduationCap } from "react-icons/fa";
 import { useState } from "react";
 
 const SchoolHistory = () => {
   const [expandedDecade, setExpandedDecade] = useState<number | null>(null);
 
   const timeline = [
-    {
-      decade: "1975-1985",
-      title: "The Founding Era",
-      icon: FaBuilding,
-      highlights: [
-        "School established with 120 students and 15 staff members",
-        "Started with classes I-VIII on a modest campus",
-        "First annual day celebration in 1976",
-        "Opened secondary wing with classes IX-X in 1980",
-      ],
-      milestone: "Foundation laid for excellence",
-    },
-    {
-      decade: "1985-1995",
-      title: "Years of Growth",
-      icon: FaTrophy,
-      highlights: [
-        "Opened senior secondary section (Classes XI-XII) in 1988",
-        "First batch of senior students scored 85%+ pass rate",
-        "Introduction of Science and Commerce streams",
-        "Student strength grew to 800+ by 1995",
-      ],
-      milestone: "Expansion to full-fledged school",
-    },
     {
       decade: "1995-2005",
       title: "Era of Excellence",
@@ -76,32 +52,21 @@ const SchoolHistory = () => {
     },
   ];
 
-  // const keyMilestones = [
-  //   { year: 1975, event: "School Founded", icon: FaHistory },
-  //   { year: 1980, event: "Secondary Section Opened", icon: FaBuilding },
-  //   { year: 1988, event: "Senior Secondary Wing Launched", icon: FaGraduationCap },
-  //   { year: 1998, event: "CBSE Affiliation Granted", icon: FaCheckCircle },
-  //   { year: 2005, event: "Campus Modernization Completed", icon: FaTrophy },
-  //   { year: 2015, event: "ISO Certification Achieved", icon: FaAward },
-  //   { year: 2020, event: "Green School Certified", icon: FaStar },
-  //   { year: 2024, event: "Golden Jubilee Celebrations", icon: FaStar },
-  // ];
-
   const achievements = [
     {
-      period: "1975-1985",
+      period: "1995-2000",
       title: "Foundation Period",
       description: "Successfully established a school with strong academic foundation and community support",
       stats: ["120 initial students", "First batch of 32 pass-outs", "15 founding staff"],
     },
     {
-      period: "1985-2000",
+      period: "2000-2005",
       title: "Growth Period",
       description: "Expanded to full secondary school with consistent quality and growing reputation",
       stats: ["800+ students", "90%+ pass rate", "State-level recognition"],
     },
     {
-      period: "2000-2015",
+      period: "2005-2015",
       title: "Excellence Period",
       description: "Achieved CBSE recognition and modernized infrastructure with technology integration",
       stats: ["1,500+ students", "92%+ pass rate", "National awards"],
@@ -117,7 +82,7 @@ const SchoolHistory = () => {
   const traditions = [
     {
       title: "Annual Day Celebration",
-      description: "Grand cultural program showcasing student talents and school achievements since 1976",
+      description: "Grand cultural program showcasing student talents and school achievements since 1995",
       frequency: "Every December",
     },
     {
@@ -139,12 +104,12 @@ const SchoolHistory = () => {
 
   const facilities = [
     {
-      year: 1975,
+      year: 1995,
       facility: "Basic Infrastructure",
       details: "2 school buildings, 12 classrooms, 1 library, open playground",
     },
     {
-      year: 1990,
+      year: 1998,
       facility: "Science Blocks",
       details: "Physics, Chemistry, Biology laboratories with modern equipment",
     },
@@ -170,12 +135,6 @@ const SchoolHistory = () => {
     },
   ];
 
-  // const notablePrincipals = [
-  //   { name: "Mr. Ashok Verma", tenure: "1975-1990", contribution: "Founded strong academic tradition" },
-  //   { name: "Mrs. Kavya Desai", tenure: "1990-2005", contribution: "Led modernization initiatives" },
-  //   { name: "Dr. Vikram Patel", tenure: "2005-Present", contribution: "Brought holistic excellence" },
-  // ];
-
   return (
     <div className="w-full">
       {/* Page Header */}
@@ -190,7 +149,7 @@ const SchoolHistory = () => {
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Dungarpur Public School, Dungarpur has been a beacon of educational excellence for over three decades. Since its establishment in 1975, the school has remained committed to nurturing minds, building character, and fostering a love for learning in thousands of students. Our rich legacy is built on the foundation of vision, dedication, and an unwavering commitment to quality education.
+            Dungarpur Public School, Dungarpur has been a beacon of educational excellence for over three decades. Since its establishment in 1995, the school has remained committed to nurturing minds, building character, and fostering a love for learning in thousands of students. Our rich legacy is built on the foundation of vision, dedication, and an unwavering commitment to quality education.
           </p>
         </div>
       </section>
@@ -214,30 +173,6 @@ const SchoolHistory = () => {
           </div>
         </div>
       </section>
-
-      {/* Key Milestones Timeline */}
-      {/* <section className="w-full py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Key Milestones</h2>
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {keyMilestones.map((milestone, index) => {
-                const IconComponent = milestone.icon;
-                return (
-                  <div
-                    key={index}
-                    className="bg-gradient-to-br from-gray-50 to-white p-4 rounded-lg shadow-md text-center border-l-4 border-secondary"
-                  >
-                    <IconComponent className="text-3xl text-secondary mx-auto mb-2" />
-                    <p className="font-roman font-bold text-primary mb-1">{milestone.year}</p>
-                    <p className="text-xs text-gray-700">{milestone.event}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* Decade-wise History */}
       <section className="w-full py-16 px-4 bg-gray-50">
@@ -346,23 +281,6 @@ const SchoolHistory = () => {
         </div>
       </section>
 
-      {/* Notable Principals
-      <section className="w-full py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-roman font-bold text-primary text-center mb-12">Leadership Through the Years</h2>
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            {notablePrincipals.map((principal, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center border-l-4 border-secondary">
-                <FaGraduationCap className="text-4xl text-secondary mx-auto mb-4" />
-                <h3 className="text-lg font-roman font-bold text-primary mb-1">{principal.name}</h3>
-                <p className="text-sm text-gray-600 mb-3">{principal.tenure}</p>
-                <p className="text-sm text-gray-700">{principal.contribution}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Notable Alumni */}
       <section className="w-full py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -395,7 +313,7 @@ const SchoolHistory = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
             {[
-              { stat: "50+", label: "Years of Excellence" },
+              { stat: "30+", label: "Years of Excellence" },
               { stat: "2,500+", label: "Current Students" },
               { stat: "15,000+", label: "Alumni Network" },
               { stat: "200+", label: "Dedicated Staff" },
